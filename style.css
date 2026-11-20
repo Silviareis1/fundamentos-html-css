@@ -213,11 +213,27 @@ footer p {
    font-size: 0.9em;
    color: #555;
 }
-.volta{
-   float: right;
-}
 .volta {
+   float: right;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+   border-radius: 50%;
+   background-color: #dcd7d7;
    text-decoration: none;
+   text-align: center;
+   margin-bottom: 5px;
+   color: #555;
+}
+
+.volta img {
+   width: 24px;
+   height: 24px;
+   object-fit: contain;
 }
 
 @media (max-width: 700px) {
