@@ -1,0 +1,241 @@
+* {
+   margin: 0;
+   /*zerando os padrões do navegador*/
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   font-size: 1.5rem;
+}
+
+/* Estilo do topo fixo */
+.topo .menu {
+   color: #F4F4F4;
+   /* Cor do texto */
+   width: 100%;
+   height: 60px;
+   position: fixed;
+   /* Fixa o topo na parte superior da janela */
+   top: 0;
+   /* Fixa o topo no topo da página */
+   z-index: 1000;
+   /* Garante que o topo esteja acima de outros elementos */
+   background-image: url(img/background-6795625_1280.jpg);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+
+.menu li {
+   list-style: none;
+}
+
+.menu a {
+   text-decoration: none;
+   /* Remove sublinhado dos links */
+   color: #F4F4F4;
+   /* Cor do texto dos links */
+   font-weight: bold;
+   /* Texto em negrito nos links */
+   padding: 10px;
+   border: 1px solid transparent;
+   border-radius: 10px;
+}
+
+.menu a:hover {
+   border-color: currentColor;
+   background-color: aqua;
+   color: blue;
+}
+
+main {
+   line-height: 1.6;
+   color: #333333;
+   width: 85%;
+   margin: auto;
+   /* Centraliza o conteúdo */
+   margin-top: 85px;
+}
+
+section {
+   background-color: #dcd7d7;
+   border-radius: 15px;
+   padding: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   scroll-margin-top: 70px;
+   /* impede que o conteúdo fique atrás do header */
+}
+#index h1 {
+   text-align: center;
+}
+
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 5px;
+}
+
+article {
+   margin: 15px 0;
+   background-color: white;
+   padding: 15px;
+   border-radius: 5px;
+   flex-grow: 1;
+   flex-basis: 400px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Mantém todos os cards de projetos com o mesmo tamanho */
+#projetos .container {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   grid-auto-rows: 1fr;
+   gap: 10px;
+}
+
+#projetos article {
+   width: 100%;
+}
+
+.card-apresentacao {
+   display: flex;
+   gap: 10px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.texto-apresentacao {
+   flex: 1;
+   min-width: 0;
+}
+
+.card-apresentacao p {
+   text-align: justify;
+   letter-spacing: 2px;
+}
+
+.imagem-apresentacao {
+   width: 48%;
+   max-height: 55dvh;
+   height: auto;
+   object-fit: contain;
+}
+
+label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 10px;
+   border: 1px solid #DDDDDD;
+}
+
+button {
+   padding: 10px 15px 10px 15px;
+   font-size: 16px;
+   background-color: #333333;
+   color: white;
+   border: 0;
+   border-radius: 5px;
+}
+
+footer {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 20px;
+   background-color: #f2f2f2;
+   width: 100%;
+   margin: 10px 0 0;
+}
+
+footer h4 {
+   margin-bottom: 10px;
+}
+
+footer nav a {
+   margin: 0 10px;
+   text-decoration: none;
+}
+
+footer nav .whatsapp {
+   color: #25D366;
+}
+
+footer nav .telefone {
+   color: #000;
+}
+
+footer nav .email {
+   color: #EA4335;
+}
+
+footer nav .linkedin {
+   color: #0077B5;
+}
+
+footer nav .github {
+   color: #181717;
+}
+footer nav i{
+   margin-right: 5px;
+}
+
+.divisor {
+   background-color: #333333;
+   padding: 0.3px;
+   margin: 20px;
+   width: 85%;
+   margin: 20px auto;
+}
+
+footer p {
+   font-size: 0.9em;
+   color: #555;
+}
+
+@media (max-width: 700px) {
+   main {
+      width: 95%;
+   }
+
+  .card-apresentacao {
+      flex-direction: column;
+      align-items: stretch;
+   }
+
+   .imagem-apresentacao {
+      width: 100%;
+      max-height: 45dvh;
+   }
+
+#projetos .container {
+      grid-template-columns: 1fr;
+   }
+
+   footer nav {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+}
