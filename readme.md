@@ -27,7 +27,7 @@ Este é um projeto desenvolvido durante as aulas do curso de **HTML e CSS - Fund
 ## 🌐 GitHub Pages
 
 Você pode acessar a página online através deste link:  
-👉 [Ver Página no GitHub Pages](https://seu-usuario.github.io/nome-do-repositorio)
+👉 [Ver Página no GitHub Pages](https://silviareis1.github.io/fundamentos-html-css/)
 
 
 
